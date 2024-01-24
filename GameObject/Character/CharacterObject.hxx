@@ -7,14 +7,14 @@ namespace scarface
 	public:
 		SR_PAD(0x158); // FIX-ME: This padding need to be removed when setting up other derived classes...
 
-		int mHealth;
-		int mMaxHealth;
-		bool mIsInjured;
+		int m_Health;
+		int m_MaxHealth;
+		bool m_IsInjured;
 		bool m_KnockedDown;
-		bool mLastHitWasToHead;
-		bool mHitByGrenade;
-		EDamageMagnitude mHitByACar;
-		bool mHitByExplosion;
+		bool m_LastHitWasToHead;
+		bool m_HitByGrenade;
+		EDamageMagnitude m_HitByACar;
+		bool m_HitByExplosion;
 
 		//=======================================================
 		// Virtual Functions
