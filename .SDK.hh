@@ -12,16 +12,18 @@
 // Headers
 
 #include <cstdint>
+#include <cmath>
 #include <Windows.h>
 
 //========================================================
 // Headers (Important)
 
-#include "Defines.hxx"
+#include "Defines.hh"
+#include "Math/.Math.hh"
 
 //========================================================
 // GameObject
 
 // Character
-#include "GameObject/Character/CharacterObjectEnums.hxx"
-#include "GameObject/Character/CharacterObject.hxx"
+#include "GameObject/Character/CharacterObjectEnums.hh"
+#include "GameObject/Character/CharacterObject.hh"

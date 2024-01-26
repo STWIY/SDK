@@ -16,7 +16,8 @@
 // Inline
 
 #ifndef SR_INLINE
-    #define SR_INLINE __forceinline
+    #define SR_INLINE           __forceinline
+    #define SR_STATIC_INLINE    SR_INLINE static
 #endif
 
 //==============================================================================

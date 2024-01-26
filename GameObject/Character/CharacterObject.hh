@@ -2,7 +2,7 @@
 
 namespace scarface
 {
-	class CCharacterObject // InventoryOwner, GameSimObject, GameObject, GameSetObject, ScriptObject, ConsoleObject
+	class CharacterObject // InventoryOwner, GameSimObject, GameObject, GameSetObject, ScriptObject, ConsoleObject
 	{
 	public:
 		SR_PAD(0x158); // FIX-ME: This padding need to be removed when setting up other derived classes...
@@ -28,9 +28,9 @@ namespace scarface
 		//=======================================================
 		// Static Functions
 
-		__forceinline static CCharacterObject* GetMainCharacter()
+		SR_STATIC_INLINE CharacterObject* GetMainCharacter()
 		{
-			return *reinterpret_cast<CCharacterObject**>(SR_RVA(0x825A78));
+			return *reinterpret_cast<CharacterObject**>(SR_RVA(0x825A78));
 		}
 	};
 }
