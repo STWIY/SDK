@@ -1,6 +1,6 @@
 #pragma once
 
-namespace scarface
+namespace math
 {
 	class Vector
 	{
