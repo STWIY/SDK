@@ -1,12 +1,9 @@
 #pragma once
 
-namespace scarface
+enum EDamageMagnitude
 {
-    enum EDamageMagnitude
-    {
-        EDamageMagnitude_none,
-        EDamageMagnitude_Easy,
-        EDamageMagnitude_Meduim,
-        EDamageMagnitude_Hard
-    };
-}
+    EDamageMagnitude_none,
+    EDamageMagnitude_Easy,
+    EDamageMagnitude_Meduim,
+    EDamageMagnitude_Hard
+};
