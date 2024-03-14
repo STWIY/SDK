@@ -17,6 +17,15 @@ namespace pure3d
 
 	//==========================================================
 
+	class pddiRenderContext : public pddiObject
+	{
+	public:
+
+	};
+	SR_ASSERT_CLASS(pddiRenderContext, 0xC);
+
+	//==========================================================
+
 	class pddiDevice : public pddiObject
 	{
 	public:

@@ -26,14 +26,24 @@
 //========================================================
 // Pure3D
 
-// ppdi
-#include "Pure3D/ppdi/ppdienum.hh"
-#include "Pure3D/ppdi/ppdi.hh"
-#include "Pure3D/ppdi/ppdiwin32.hh"
+// pddi
+#include "Pure3D/pddi/pddienum.hh"
+#include "Pure3D/pddi/pdditype.hh"
+#include "Pure3D/pddi/pddi.hh"
+#include "Pure3D/pddi/pddiwin32.hh"
+
+// ppdi (base)
+#include "Pure3D/pddi/base/basetype.hh"
+#include "Pure3D/pddi/base/font.hh"
+#include "Pure3D/pddi/base/basecontext.hh"
 
 // ppdi (dx9)
-#include "Pure3D/ppdi/dx9/device.hh"
-#include "Pure3D/ppdi/dx9/display.hh"
+#include "Pure3D/pddi/dx9/device.hh"
+#include "Pure3D/pddi/dx9/display.hh"
+#include "Pure3D/pddi/dx9/state.hh"
+#include "Pure3D/pddi/dx9/primstream.hh"
+#include "Pure3D/pddi/dx9/vertprog.hh"
+#include "Pure3D/pddi/dx9/context.hh"
 
 //========================================================
 // Core
