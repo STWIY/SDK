@@ -22,6 +22,43 @@ public:
 class CharacterIntention
 {
 public:
+    enum Button
+    {
+        BUTTON_ACTIVATE = 0,
+        BUTTON_CROUCH,
+        BUTTON_CROUCHRUN,
+        BUTTON_STAND,
+        BUTTON_CROUCHSTAND,
+        BUTTON_SELECTPREVIOUSWEAPON,
+        BUTTON_SELECTNEXTWEAPON,
+        BUTTON_SLOTUP,
+        BUTTON_SLOTDOWN,
+        BUTTON_SLOTLEFT,
+        BUTTON_SLOTRIGHT,
+        BUTTON_FIRE,
+        BUTTON_ALTERNATEFIRE,
+        BUTTON_TALK,
+        BUTTON_PROVOKE,
+        BUTTON_LOCKTARGET,
+        BUTTON_RELEASETARGET,
+        BUTTON_VADERALTARGET,
+        BUTTON_RECENTERCAMERA,
+        BUTTON_SELECT,
+        BUTTON_RELOAD,
+        BUTTON_TOGGLEWEAPON,
+        BUTTON_RAGE,
+        BUTTON_ZOOMIN,
+        BUTTON_ZOOMOUT,
+        BUTTON_SKIPNIS,
+        BUTTON_EXECUTE,
+        BUTTON_DANCE,
+        BUTTON_DANCEMOVE,
+        BUTTON_WALLCOVER,
+        BUTTON_SPRINT,
+        BUTTON_BLOCK,
+        BUTTON_COUNT
+    };
+
     short m_ButtonStates[32];                               // 0x0
     float m_LocomotionRingSpeeds[4];                        // 0x40
     math::Vector m_MotionDirection;                         // 0x50

@@ -90,6 +90,10 @@
 //========================================================
 // GameObject
 
+// Enums
+#include "GameObject/Character/CharacterObjectEnums.hh"
+#include "GameObject/Vehicle/VehicleTypeEnum.hh"
+
 // AI (Actions)
 #include "GameObject/AI/Actions/ActionSharedVariable.hh"
 
@@ -108,5 +112,4 @@
 #include "GameObject/Character/SpeedController.hh"
 #include "GameObject/Character/CharacterIntention.hh"
 #include "GameObject/Character/IntentionArbitrator.hh"
-#include "GameObject/Character/CharacterObjectEnums.hh"
 #include "GameObject/Character/CharacterObject.hh"

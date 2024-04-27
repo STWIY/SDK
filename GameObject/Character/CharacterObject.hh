@@ -114,8 +114,8 @@ public:
     CharacterLocomotionContextType mLocomotionContext;                      // 0x3CC
     CharacterClass mCharacterClass;                                         // 0x3E0  
     bool mRepeatTaskProcessRequested;                                       // 0x3D4
-    core::Key mVehicleAITaskName[6];                                        // 0x3D8
-    uint32_t mVehicleAITask[6];                                             // 0x3F0
+    core::Key mVehicleAITaskName[EVehicleType_MAX];                         // 0x3D8
+    uint32_t mVehicleAITask[EVehicleType_MAX];                              // 0x3F0
     ScriptObjectPointer<AICommandSequencer*> m_AICommandSequencer;          // 0x408 
     uint8_t mTimeOfDayOnTime;                                               // 0x40C 
     uint8_t mTimeOfDayOffTime;                                              // 0x40D 
