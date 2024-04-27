@@ -86,6 +86,7 @@
 
 // Character
 #include "Engine/Character/SkeletonJoint.hh"
+#include "Engine/Character/Character.hh"
 
 //========================================================
 // GameObject
@@ -113,3 +114,6 @@
 #include "GameObject/Character/CharacterIntention.hh"
 #include "GameObject/Character/IntentionArbitrator.hh"
 #include "GameObject/Character/CharacterObject.hh"
+
+// Vehicle
+#include "GameObject/Vehicle/VehicleObject.hh"

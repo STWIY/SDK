@@ -5,7 +5,6 @@
 
 class AIBehavior;
 class AICommandSequencer;
-class Character;
 class CharacterContext;
 class CharacterObjectCapability;
 class CharacterTemplate;
