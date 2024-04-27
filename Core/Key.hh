@@ -2,5 +2,5 @@
 
 namespace core
 {
-	typedef unsigned int Key;
+	typedef uint32_t Key;
 }
