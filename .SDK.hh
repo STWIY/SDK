@@ -121,3 +121,12 @@
 
 // Vehicle
 #include "GameObject/Vehicle/VehicleObject.hh"
+
+// Sound
+#include "GameObject/Sound/SoundPoiObject.hh"
+
+// StateProp
+#include "GameObject/StateProp/StatePropObject.hh"
+#include "GameObject/StateProp/WeaponPickup.hh"
+#include "GameObject/StateProp/WeaponStateProp.hh"
+#include "GameObject/StateProp/MountedWeaponStateProp.hh"
