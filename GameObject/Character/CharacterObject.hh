@@ -9,6 +9,6 @@ public:
 
 	SR_STATIC_INLINE CharacterObject* GetMainCharacter()
 	{
-		return *reinterpret_cast<CharacterObject**>(SR_RVA(0x825A78));
+		return *reinterpret_cast<CharacterObject**>(0x825A78);
 	}
 };

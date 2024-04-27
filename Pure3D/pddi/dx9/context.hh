@@ -25,7 +25,7 @@ namespace pure3d
 		__int64 beginTime;
 		float ticksToMs;
 
-		static SR_INLINE d3dContext* GetInstance()
+		SR_STATIC_INLINE d3dContext* GetInstance()
 		{
 			return *reinterpret_cast<d3dContext**>(0x859C7C);
 		}

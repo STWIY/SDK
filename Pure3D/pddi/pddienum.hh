@@ -2,6 +2,21 @@
 
 namespace pure3d
 {
+    enum pddiBlendFactor
+    {
+        PDDI_BF_ZERO,
+        PDDI_BF_ONE,
+        PDDI_BF_SRC,
+        PDDI_BF_ONE_MINUS_SRC,
+        PDDI_BF_DEST,
+        PDDI_BF_ONE_MINUS_DEST,
+        PDDI_BF_SRCALPHA,
+        PDDI_BF_ONE_MINUS_SRCALPHA,
+        PDDI_BF_DESTALPHA,
+        PDDI_BF_ONE_MINUS_DESTALPHA,
+        PDDI_BF_SRCALPHASATURATE
+    };
+
     enum pddiCompareMode
     {
         PDDI_COMPARE_NONE,
@@ -44,6 +59,12 @@ namespace pure3d
         PDDI_PROJECTION_DEVICE
     };
 
+    enum pddiShadeMode
+    {
+        PDDI_SHADE_FLAT,
+        PDDI_SHADE_GOURAUD
+    };
+
     enum pddiStatType
     {
         PDDI_STAT_CURRENT_FRAME,
@@ -82,5 +103,11 @@ namespace pure3d
         PDDI_STAT_TEXTURE_ALLOC_32BIT,
         PDDI_STAT_TEXTURE_COUNT_DXTN,
         PDDI_STAT_TEXTURE_ALLOC_DXTN
+    };
+
+    enum pddiUVMode
+    {
+        PDDI_UV_TILE,
+        PDDI_UV_CLAMP
     };
 }

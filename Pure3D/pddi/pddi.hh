@@ -44,6 +44,15 @@ namespace pure3d
 
 	//==========================================================
 
+	class pddiTexture : public pddiObject
+	{
+	public:
+
+	};
+	SR_ASSERT_CLASS(pddiTexture, 0xC);
+
+	//==========================================================
+
 	struct pddiModeInfo
 	{
 		int width;
