@@ -59,6 +59,8 @@
 //========================================================
 // Container
 
+#include "Container/ArrayDynamic.hh"
+#include "Container/Deque.hh"
 #include "Container/smVector.hh"
 
 //========================================================
@@ -83,6 +85,8 @@
 #include "Engine/Object/GameObject.hh"
 #include "Engine/Object/GameSimObject.hh"
 #include "Engine/Object/GameSet.hh"
+#include "Engine/Object/PositionObject.hh"
+#include "Engine/Object/PositionSetObject.hh"
 
 // Character
 #include "Engine/Character/SkeletonJoint.hh"

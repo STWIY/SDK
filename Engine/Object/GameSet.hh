@@ -6,3 +6,9 @@ public:
     smVector<ScriptObject*> m_ScriptObjects;    // 0x30
 };
 SR_ASSERT_CLASS(GameSet, 0x40);
+
+class GameGroup : public GameSet
+{
+public:
+
+};
