@@ -15,6 +15,9 @@ enum FightTreePhysicalMode {};
 
 //======================================================
 
+class VehicleObject;
+class WeaponStateProp;
+
 class CharacterObject : public InventoryOwner
 {
 public:
@@ -137,10 +140,24 @@ public:
     DBKey mHealthPostKey;                                                   // 0x428
     CharacterObjectCapability* mCapability;                                 // 0x42C
 
+    //=======================================================
+    // Functions
+
+    // Gets vehicle/vehicle of mounted weapon.
+    SR_INLINE auto GetVehicle()
+    {
+        return reinterpret_cast<VehicleObject*(__thiscall*)(void*)>(0x5755D0)(this);
+    }
+
+    SR_INLINE auto GetWeapon()
+    {
+        return mWeaponState.mWeapon.Get();
+    }
+
 	//=======================================================
 	// Static Functions
 
-	SR_STATIC_INLINE CharacterObject* GetMainCharacter()
+	SR_STATIC_INLINE auto GetMainCharacter()
 	{
 		return *reinterpret_cast<CharacterObject**>(0x825A78);
 	}
