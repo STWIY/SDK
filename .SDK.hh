@@ -95,6 +95,10 @@
 #include "Engine/Character/SkeletonJoint.hh"
 #include "Engine/Character/Character.hh"
 
+// Stream
+#include "Engine/Stream/StreamClient.hh"
+#include "Engine/Stream/StreamPackage.hh"
+
 //========================================================
 // GameObject
 
@@ -133,3 +137,8 @@
 #include "GameObject/StateProp/WeaponPickup.hh"
 #include "GameObject/StateProp/WeaponStateProp.hh"
 #include "GameObject/StateProp/MountedWeaponStateProp.hh"
+
+// SpawnObject
+#include "GameObject/SpawnObject/SpawnTypes.hh"
+#include "GameObject/SpawnObject/CVLoadObject.hh"
+#include "GameObject/SpawnObject/SpawnMixer.hh"

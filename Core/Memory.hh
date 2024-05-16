@@ -33,4 +33,8 @@ namespace core
 		CORE_MEMORY_ALLOCATOR_MAX = 0x7F
 	};
 
+	class IMemoryAllocator
+	{
+	public:
+	};
 }
