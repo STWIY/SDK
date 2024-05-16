@@ -24,6 +24,14 @@ public:
 	uint8_t m_SpawnType : 4;
 
 	//=========================================================
+	// Static Functions
+	
+	SR_STATIC_INLINE StreamSlot* GetStreamSlot(ESpawnTemplateType p_TemplateType)
+	{
+		return reinterpret_cast<StreamSlot*(__cdecl*)(ESpawnTemplateType)>(0x5F73E0)(p_TemplateType);
+	}
+
+	//=========================================================
 	// Functions
 
 	SR_INLINE ESpawnType GetSpawnType()
@@ -34,6 +42,16 @@ public:
 	SR_INLINE bool IsLoaded()
 	{
 		return (m_SpawnLoadStatus == ESpawnLoadStatus_Loaded);
+	}
+
+	SR_INLINE void Load()
+	{
+		reinterpret_cast<void(__thiscall*)(void*)>(0x5F7470)(this);
+	}
+
+	SR_INLINE void Unload()
+	{
+		reinterpret_cast<void(__thiscall*)(void*)>(0x5F7A50)(this);
 	}
 };
 SR_ASSERT_CLASS(CVLoadObject, 0x20);

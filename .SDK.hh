@@ -96,6 +96,7 @@
 #include "Engine/Character/Character.hh"
 
 // Stream
+#include "Engine/Stream/StreamSlot.hh"
 #include "Engine/Stream/StreamClient.hh"
 #include "Engine/Stream/StreamPackage.hh"
 
