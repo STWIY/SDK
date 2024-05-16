@@ -69,6 +69,9 @@
 // Common
 #include "Engine/Common/DataTypes.hh"
 
+// Flow
+#include "Engine/Flow/FlowTime.hh"
+
 // Util
 #include "Engine/Util/ScriptObjectPointer.hh"
 
