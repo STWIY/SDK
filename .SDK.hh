@@ -91,6 +91,12 @@
 #include "Engine/Object/PositionObject.hh"
 #include "Engine/Object/PositionSetObject.hh"
 
+// Controller
+#include "Engine/Controller/ActionMap.hh"
+
+// Game
+#include "Engine/Game/CVManager.hh"
+
 // Character
 #include "Engine/Character/SkeletonJoint.hh"
 #include "Engine/Character/Character.hh"
@@ -141,5 +147,6 @@
 
 // SpawnObject
 #include "GameObject/SpawnObject/SpawnTypes.hh"
+#include "GameObject/SpawnObject/SpawnObject.hh"
 #include "GameObject/SpawnObject/CVLoadObject.hh"
 #include "GameObject/SpawnObject/SpawnMixer.hh"

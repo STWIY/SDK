@@ -5,10 +5,7 @@ namespace math
 	class Matrix
 	{
 	public:
-		float m_Col0[4];
-		float m_Col1[4];
-		float m_Col2[4];
-		float m_Col3[4];
+		float m[4][4];
 
 		//===================================================================
 		// Constructors
@@ -35,6 +32,14 @@ namespace math
 		SR_INLINE void FillHeadingXZ(Vector& p_HeadingXZ)
 		{
 			reinterpret_cast<void(__thiscall*)(Matrix*, Vector&)>(0x661800)(this, p_HeadingXZ);
+		}
+
+		//===================================================================
+		// Helpers
+
+		SR_INLINE Vector& GetPosition()
+		{
+			return reinterpret_cast<Vector&>(m[3]);
 		}
 	};
 }
