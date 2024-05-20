@@ -29,11 +29,19 @@ public:
 	float m_RareUniqueEvictionTimer[ESpawnTemplateType_MAX];
 
 	//=========================================================
-	// Functions
+	// Static Functions
 
 	SR_STATIC_INLINE SpawnMixer* GetInstance()
 	{
 		return *reinterpret_cast<SpawnMixer**>(0x82C020);
+	}
+
+	//=========================================================
+	// Functions
+
+	SR_INLINE CVLoadObject* FindCVLoadObject(const char* p_szName, ESpawnTemplateType p_eSpawnTemplateType = ESpawnTemplateType_MAX)
+	{
+		return reinterpret_cast<CVLoadObject * (__thiscall*)(void*, const char*, ESpawnTemplateType)>(0x6027F0)(this, p_szName, p_eSpawnTemplateType);
 	}
 };
 SR_ASSERT_CLASS(SpawnMixer, 0xCC);

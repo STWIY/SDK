@@ -53,5 +53,16 @@ public:
 	{
 		reinterpret_cast<void(__thiscall*)(void*)>(0x5F7A50)(this);
 	}
+	
+	SR_INLINE void AddSpawnUsage(ESpawnUsage p_eSpawnUsage)
+	{
+		reinterpret_cast<void(__thiscall*)(void*, ESpawnUsage)>(0x5F7980)(this, p_eSpawnUsage);
+	}
+
+
+	SR_INLINE void RemoveSpawnUsage(ESpawnUsage p_eSpawnUsage)
+	{
+		reinterpret_cast<void(__thiscall*)(void*, ESpawnUsage)>(0x5F76A0)(this, p_eSpawnUsage);
+	}
 };
 SR_ASSERT_CLASS(CVLoadObject, 0x20);
