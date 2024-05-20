@@ -30,6 +30,12 @@ public:
         return reinterpret_cast<float(__thiscall*)(void*, core::Key)>(0x42C690)(this, p_kName);
     }
 
+    // 0.f -> 1.f
+    SR_INLINE float GetValueClamped(core::Key p_kName)
+    {
+        return reinterpret_cast<float(__cdecl*)(void*, core::Key)>(0x4CB210)(this, p_kName);
+    }
+
     SR_INLINE bool BindEvent(const char* p_szController, const char* p_szButton, const char* p_szAction, void* p_Function = nullptr, void* p_Command = nullptr, int p_iTimer = -1, bool p_bUnknown0 = false, bool p_bUnknown1 = false, bool p_bBlocking = false)
     {
         return reinterpret_cast<bool(__thiscall*)(void*, const char*, const char*, const char*, void*, void*, int, bool, bool, bool, bool)>(0x42C8B0)(this, p_szController, p_szButton, p_szAction, p_Function, p_Command, p_iTimer, p_bUnknown0, p_bUnknown1, p_bBlocking, true);

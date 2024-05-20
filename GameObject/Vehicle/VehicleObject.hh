@@ -9,7 +9,7 @@ class VehicleTemplate;
 
 //======================================================
 
-class VehicleObject : GameSimObject
+class VehicleObject : public GameSimObject
 {
 public:
     bool mToBeCulled;                               // 0xA8

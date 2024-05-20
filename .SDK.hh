@@ -69,6 +69,9 @@
 // Common
 #include "Engine/Common/DataTypes.hh"
 
+// Script
+#include "Engine/Script/JDScript/StringTableEntry.hh"
+
 // Flow
 #include "Engine/Flow/FlowTime.hh"
 
@@ -112,6 +115,10 @@
 // Enums
 #include "GameObject/Character/CharacterObjectEnums.hh"
 #include "GameObject/Vehicle/VehicleTypeEnum.hh"
+
+// Template
+#include "GameObject/Template/Vehicle/VehicleCameraCategoryProperties.hh"
+#include "GameObject/Template/Vehicle/VehicleCameraProperties.hh"
 
 // AI (Actions)
 #include "GameObject/AI/Actions/ActionSharedVariable.hh"
