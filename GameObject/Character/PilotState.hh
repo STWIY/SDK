@@ -57,5 +57,33 @@ public:
     CharacterObject* m_Character;                           // 0x8C
     ScriptObjectPointer<class VehicleObject*> m_Vehicle;    // 0x90
     InventoryId m_VehicleInventoryId;                       // 0x94
+
+	//=========================================================
+	// Functions
+
+    SR_INLINE void FixSeat(CharacterObject* p_Character, VehicleObject* p_Vehicle, int p_iSeatIndex)
+    {
+        reinterpret_cast<void(__thiscall*)(void*, CharacterObject*, VehicleObject*, int)>(0x5844B0)(this, p_Character, p_Vehicle, p_iSeatIndex);
+    }
+
+    SR_INLINE bool ExitCar(int p_iExitDoor = -1)
+    {
+       return reinterpret_cast<bool(__thiscall*)(void*, int)>(0x584840)(this, p_iExitDoor);
+    }
+
+    SR_INLINE bool ExitBoat()
+    {
+        return reinterpret_cast<bool(__thiscall*)(void*)>(0x585330)(this);
+    }
+
+    SR_INLINE bool ExitHelicopter()
+    {
+        return reinterpret_cast<bool(__thiscall*)(void*)>(0x5843A0)(this);
+    }
+
+    SR_INLINE bool ExitAirplane()
+    {
+        return reinterpret_cast<bool(__thiscall*)(void*)>(0x5842C0)(this);
+    }
 };
 SR_ASSERT_CLASS(PilotState, 0x98);
