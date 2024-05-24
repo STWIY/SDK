@@ -95,6 +95,7 @@
 #include "Engine/Object/PositionSetObject.hh"
 
 // Controller
+#include "Engine/Controller/Controller.hh"
 #include "Engine/Controller/ActionMap.hh"
 
 // Game
@@ -139,6 +140,7 @@
 #include "GameObject/Character/CharacterIntention.hh"
 #include "GameObject/Character/IntentionArbitrator.hh"
 #include "GameObject/Character/CharacterObject.hh"
+#include "GameObject/Character/ControllerInput.hh"
 
 // Vehicle
 #include "GameObject/Vehicle/VehicleObject.hh"
