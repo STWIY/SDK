@@ -101,6 +101,9 @@
 // Game
 #include "Engine/Game/CVManager.hh"
 
+// Render
+#include "Engine/Render/Renderer.hh"
+
 // Character
 #include "Engine/Character/SkeletonJoint.hh"
 #include "Engine/Character/Character.hh"
