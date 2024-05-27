@@ -1,5 +1,20 @@
 #pragma once
 
+//=================================================================================
+
+class DanceState : public GameSetObject
+{
+public:
+    bool mIsInDanceVolume;
+    bool mIsDancing;
+
+    SR_STATIC_INLINE DanceState* GetInstance()
+    {
+        return reinterpret_cast<DanceState*(__stdcall*)()>(0x56E110)();
+    }
+};
+SR_ASSERT_CLASS(DanceState, 0x34);
+
 class Swim
 {
 public:
