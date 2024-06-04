@@ -38,5 +38,23 @@ public:
     bool mAttackedByMelee : 1;                      // 0xE9
     bool mCameraFadeOutRequest : 1;                 // 0xE9
     bool mCameraFadeOutFaded : 1;                   // 0xEA
+
+    //=======================================================
+    // Functions
+
+    SR_INLINE auto SafeGetActiveObject()
+    {
+        reinterpret_cast<ActiveVehicleObject*(__thiscall*)(void*)>(0x636650)(this);
+    }
+
+    SR_INLINE auto GetVehicleEngine()
+    {
+        reinterpret_cast<VehicleEngine*(__thiscall*)(void*)>(0x636740)(this);
+    }
+
+    SR_INLINE auto GetDriverIfAny()
+    {
+        reinterpret_cast<CharacterObject*(__thiscall*)(void*)>(0x638940)(this);
+    }
 };
 SR_ASSERT_CLASS(VehicleObject, 0xEC);

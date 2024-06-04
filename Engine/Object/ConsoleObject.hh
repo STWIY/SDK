@@ -3,7 +3,11 @@
 class ConsoleObject
 {
 public:
-    void* vfptr;                            // 0x0
+    //======================================================
+    // Virtual Functions
+
+    virtual void* GetClassRep() = 0;
+    virtual void Destructor(bool p_bDelete) = 0;
 
     //======================================================
     // Static operators

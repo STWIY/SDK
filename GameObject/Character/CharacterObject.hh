@@ -143,6 +143,36 @@ public:
     //=======================================================
     // Functions
 
+    SR_INLINE void AddHealth(int p_iHealth)
+    {
+        reinterpret_cast<void(__thiscall*)(void*, int)>(0x577650)(this, p_iHealth);
+    }
+
+    SR_INLINE void SetHealth(int p_iHealth)
+    {
+        reinterpret_cast<void(__thiscall*)(void*, int)>(0x5776B0)(this, p_iHealth);
+    }
+
+    SR_INLINE int GetHealth()
+    {
+        return this->mHealth;
+    }
+
+    SR_INLINE void SetMaxHealth(int p_iMaxHealth)
+    {
+        this->mMaxHealth = p_iMaxHealth;
+    }
+
+    SR_INLINE int GetMaxHealth()
+    {
+        return this->mMaxHealth;
+    }
+
+    SR_INLINE auto GetJointMatrix(ESkeletonJoint p_eJoint)
+    {
+        return reinterpret_cast<math::Matrix*(__thiscall*)(void*, ESkeletonJoint)>(0x572410)(this, p_eJoint);
+    }
+
     // Gets vehicle/vehicle of mounted weapon.
     SR_INLINE auto GetVehicle()
     {

@@ -5,7 +5,10 @@ namespace math
 	class Matrix
 	{
 	public:
-		float m[4][4];
+		float m0[4];
+		float m1[4];
+		float m2[4];
+		float m3[4];
 
 		//===================================================================
 		// Constructors
@@ -39,7 +42,7 @@ namespace math
 
 		SR_INLINE Vector& GetPosition()
 		{
-			return reinterpret_cast<Vector&>(m[3]);
+			return reinterpret_cast<Vector&>(m3);
 		}
 	};
 }

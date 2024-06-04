@@ -64,6 +64,11 @@
 #include "Container/smVector.hh"
 
 //========================================================
+// ravenphysics
+
+#include "ravenphysics/Collision/CollisionObject.hh"
+
+//========================================================
 // Engine
 
 // Common
@@ -84,6 +89,13 @@
 // AIGadgets
 #include "Engine/AIGadgets/SmartPosition.hh"
 
+// Collision
+#include "Engine/Collision/Collidable.hh"
+#include "Engine/Collision/CollidableHandle.hh"
+
+// Render
+#include "Engine/Render/Renderer.hh"
+
 // Object
 #include "Engine/Object/ConsoleObject.hh"
 #include "Engine/Object/ScriptObject.hh"
@@ -101,12 +113,12 @@
 // Game
 #include "Engine/Game/CVManager.hh"
 
-// Render
-#include "Engine/Render/Renderer.hh"
-
 // Character
 #include "Engine/Character/SkeletonJoint.hh"
 #include "Engine/Character/Character.hh"
+
+// Vehicle
+#include "Engine/Vehicle/VehicleEngine.hh"
 
 // Stream
 #include "Engine/Stream/StreamSlot.hh"
@@ -145,9 +157,6 @@
 #include "GameObject/Character/CharacterObject.hh"
 #include "GameObject/Character/ControllerInput.hh"
 
-// Vehicle
-#include "GameObject/Vehicle/VehicleObject.hh"
-
 // Sound
 #include "GameObject/Sound/SoundPoiObject.hh"
 
@@ -156,6 +165,10 @@
 #include "GameObject/StateProp/WeaponPickup.hh"
 #include "GameObject/StateProp/WeaponStateProp.hh"
 #include "GameObject/StateProp/MountedWeaponStateProp.hh"
+
+// Vehicle
+#include "GameObject/Vehicle/ActiveVehicleObject.hh"
+#include "GameObject/Vehicle/VehicleObject.hh"
 
 // SpawnObject
 #include "GameObject/SpawnObject/SpawnTypes.hh"

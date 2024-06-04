@@ -30,6 +30,37 @@ public:
     bool m_UnknownFlag13 : 1;                   // 0x1F
     bool m_UnknownFlag14 : 1;                   // 0x1F
     bool m_UnknownFlag15 : 1;                   // 0x1F
+
+    //======================================================
+    // Virtual Functions
+
+    virtual void _VFunc2() = 0;
+    virtual void _VFunc3() = 0;
+    virtual void ApplyChanges(bool p_bOnInit) = 0;
+    virtual void ChangesApplied(bool p_bOnInit) = 0;
+    virtual void ScriptInit() = 0;
+    virtual void CodeInit() = 0;
+    virtual void UpdatePreSim(FlowTime* p_FlowTime) = 0;
+    virtual void UpdatePostSim(FlowTime* p_FlowTime) = 0;
+    virtual void LoadingComplete() = 0;
+    virtual void UnloadingComplete() = 0;
+    virtual void _VFunc12() = 0;
+    virtual void Initialize() = 0;
+    virtual void Terminate() = 0;
+    virtual void _VFunc15() = 0;
+    virtual void _VFunc16() = 0;
+    virtual void SetVisible(bool p_bVisible) = 0;
+    virtual bool IsSleeping() = 0;
+    virtual bool SetSleeping(bool p_bSleeping) = 0;
+    virtual bool IsCharacter() = 0;
+    virtual bool IsVehicle() = 0;
+    virtual bool IsStateProp() = 0;
+    virtual void _VFunc23() = 0;
+    virtual void _VFunc24() = 0;
+    virtual bool IsInGameSet(ScriptObject* p_ScriptObject) = 0;
+    virtual void _VFunc26() = 0;
+    virtual int GetGameSetCount() = 0;
+    virtual uint16_t GetGameSetID(int p_iIndex) = 0;
 };
 SR_ASSERT_CLASS(ScriptObject, 0x20);
 
