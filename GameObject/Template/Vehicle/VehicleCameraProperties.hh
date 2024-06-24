@@ -12,5 +12,8 @@ public:
     StringTableEntry mCategoryPropertiesName;                                  // 0x38
     ScriptObjectPointer<VehicleCameraCategoryProperties*> mCategoryProperties; // 0x3C
 
-    SR_SCRIPTOBJECT_CONSTRUCTOR(VehicleCameraProperties, 0x62F500);
+    SR_STATIC_INLINE VehicleCameraProperties* CreateInstance(const char* p_Name)
+    {
+        return reinterpret_cast<VehicleCameraProperties*(__thiscall*)(void*, const char*, int)>(0x62F500)(core::New<VehicleCameraProperties>(), p_Name, 0);
+    }
 };

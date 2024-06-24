@@ -118,7 +118,9 @@
 #include "Engine/Character/Character.hh"
 
 // Vehicle
+#include "Engine/Vehicle/PlayerVehicleIntentions.hh"
 #include "Engine/Vehicle/VehicleEngine.hh"
+#include "Engine/Vehicle/HelicopterEngine.hh"
 
 // Stream
 #include "Engine/Stream/StreamSlot.hh"

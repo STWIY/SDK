@@ -41,7 +41,6 @@ public:
         MAX_PLUGIN_STATEPROPS,
     };
 
-    void* vfptr;                                                                     // 0x0
     uint32_t m_LastCharacterToApplyDamageID;                                         // 0x4
     ScriptObjectPointer<VehicleObject*> mVehicleObject;                              // 0x8
     VehicleTemplate* mVehicleTemplate;                                               // 0xC
@@ -66,6 +65,18 @@ public:
     bool mHealthMeterDisplayEnabled;                                                 // 0x64C
     int mCurrentHealthState;                                                         // 0x650
     int mResetMotionHack;                                                            // 0x654
+
+    //======================================================
+    // Virtual Functions
+
+    virtual void Destructor(bool p_bDelete) = 0;
+    virtual void _VFunc1() = 0;
+    virtual void _VFunc2() = 0;
+    virtual void Reset() = 0;
+    virtual bool FindExitPosition(math::Vector* p_vExitPosition) = 0;
+    virtual void _VFunc5() = 0;
+    virtual void _VFunc6() = 0;
+    virtual void Explode() = 0;
 
     //=======================================================
     // Functions

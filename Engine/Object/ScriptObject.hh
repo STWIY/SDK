@@ -63,9 +63,3 @@ public:
     virtual uint16_t GetGameSetID(int p_iIndex) = 0;
 };
 SR_ASSERT_CLASS(ScriptObject, 0x20);
-
-//===================================================================
-// Preprocessors
-
-#define SR_SCRIPTOBJECT_CONSTRUCTOR(ClassName, ConstructorAddress) \
-    SR_INLINE ClassName(const char* p_Name) { reinterpret_cast<void(__thiscall*)(void*, const char*, int)>(ConstructorAddress)(this, p_Name, 0); }

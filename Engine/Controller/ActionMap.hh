@@ -10,7 +10,10 @@ public:
     bool m_bPushed;                             // 0x2A
     smVector<void> m_Events;                    // 0x2C
 
-    SR_SCRIPTOBJECT_CONSTRUCTOR(ActionMap, 0x42C3A0);
+    SR_STATIC_INLINE ActionMap* CreateInstance(const char* p_Name)
+    {
+        return reinterpret_cast<ActionMap*(__thiscall*)(void*, const char*, int)>(0x42C3A0)(core::New<ActionMap>(), p_Name, 0);
+    }
 
     //=========================================================
     // Functions

@@ -35,5 +35,8 @@ public:
     float mTune_BaseYOffset;                 // 0x94
     float mTune_BasePitch;                   // 0x98
 
-    SR_SCRIPTOBJECT_CONSTRUCTOR(VehicleCameraCategoryProperties, 0x62D6C0);
+    SR_STATIC_INLINE VehicleCameraCategoryProperties* CreateInstance(const char* p_Name)
+    {
+        return reinterpret_cast<VehicleCameraCategoryProperties*(__thiscall*)(void*, const char*, int)>(0x62D6C0)(core::New<VehicleCameraCategoryProperties>(), p_Name, 0);
+    }
 };

@@ -47,6 +47,12 @@ namespace core
 		return reinterpret_cast<T*(__cdecl*)(MemoryAllocator, size_t)>(0x6DC390)(CORE_MEMORY_ALLOC_DEFAULT, p_Size);
 	}
 
+	template <typename T>
+	SR_INLINE T* New()
+	{
+		return New<T>(sizeof(T));
+	}
+
 	SR_INLINE void Delete(void* p_Block)
 	{
 		reinterpret_cast<void(__cdecl*)(MemoryAllocator, void*)>(0x43CE70)(CORE_MEMORY_ALLOC_DEFAULT, p_Block);
